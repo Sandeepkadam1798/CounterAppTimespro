@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+
+    <label  id="Labal1" style="font-size: 200px ">0</label><br>
+    <button id="decri">Decriment</button>
+    <button id="Incriment">Incriment</button>
+    <button id="Reset1">Reset</button>
+
+</div>
+
+
+<script>
+
+    let count=0;
+
+    document.getElementById("decri").onclick=function(){
+        count -= 1;
+        document.getElementById("Labal1").innerHTML= count;
+    }
+
+    document.getElementById("Incriment").onclick=function(){
+        count += 1;
+        document.getElementById("Labal1").innerHTML= count;
+    }
+
+    document.getElementById("Reset1").onclick=function(){
+        count =0;
+        document.getElementById("Labal1").innerHTML= count;
+    }
+
+</script>
+</body>
+</html>
